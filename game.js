@@ -57,7 +57,7 @@ function checkAnswer(currentLevel) {
         $("h1").text("Opps! You lose on level " + level);
         $("h1").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
         level = 0;
-
+        gamePattern = [];
         setTimeout(function () {
             $("h1").text("Press any key to restart");
         }, 3500);
